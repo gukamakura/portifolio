@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geotube</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS & FontAwesome -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- ICONS https://fontawesome.com/-->
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <span>Gustavo Kamakura</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#about">Geotube</a></li>
+            <!-- --
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            -->
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <a href="index.html">
+            <button class="visit-btn">Go back</button>
+        </a>
+    </header>
+
+    <section id="about">
+        <div class="about-container">
+
+
+            <div class="grid">
+                <div class="grid-card">
+                    <div class="text">
+                        <img src="assets/img/bag.png" alt="Foto de Gustavo Kamakura">
+                        <span>Sludge cake volume</span>
+                        <p>The volume of cake that will be produced within the Geoforma, through the drying of the mixture, can be determined based on the volume of the mixture to be treated, the solids content of the mixture and the leachate, and the density of the mixture and the leachate.</p>
+                    </div>
+                </div>
+                <div class="grid-card">
+                    <center>
+                        <i class="fa-solid fa-calculator"></i>
+                        <span>Calculate the volume for your project</span>
+                        <form id="calculator" class="input-box">
+                            <div class="input">
+                                <label for="TSP_mistura">Initial mixture solids content (%)</label>
+                                <input type="text" id="TSP_mistura">
+                            </div>
+                            <div class="input">
+                                <label for="densidade_mistura">Initial mixture density (t/m³)</label>
+                                <input type="text" id="densidade_mistura">
+                            </div>
+                            <div class="input">
+                                <label for="volume_mistura">Mixture volume entered (m³)</label>
+                                <input type="text" id="volume_mistura">
+                            </div>
+                            <div class="input">
+                                <label for="TSP_final">Retained solids content (%)</label>
+                                <input type="text" id="TSP_final">
+                            </div>
+                            <div class="input">
+                                <label for="densidade_final">Retained density (t/m³)</label>
+                                <input type="text" id="densidade_final">
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="submit" class="visit-btn">Volume of cake generated (m³)</button>
+                            </div>
+                            <div><span id="results"></span></div>
+                        </form>
+                    </div>
+                </center>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <!--<ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        -->
+        <p class="copyright">© All Rights Reserved | MageoKa Engenharia</p>
+    </footer>
+    <script src="assets/js/volume_bag.js"></script>
+    <script src=assets/js/home_page.js></script>
+</body>
+</html>
